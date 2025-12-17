@@ -1,13 +1,13 @@
 # My Maven Project
 
 ### Overview
-- Sandbox project to practice Selenium by exersicing automation testing concepts and use cases outlined in the [Project Overview](#project-overview)
-- More notes of particular applications are written inside the code comments of the relevant file(s).
-- [Usage](#usage) section 
+- Sandbox Maven project to exersice automation testing concepts and use cases outlined in the [Project Overview](#project-overview).
+- More notes of particular applications are written in the code comments of the relevant file(s).
+- To run the project, follow instructions in the [Usage](#usage) section after [Installation Prerequisites](#installation-prerequisites) are completed.
 
 ### Installation Prerequisites
 - **Download the project:** Use one of the methods below
-	- Clone repository using Git `git clone https://github.com/fresheeh/MyMavenProject.git` or GitHub Desktop
+	- **Clone repository** using Git (`git clone https://github.com/fresheeh/MyMavenProject.git`) or GitHub Desktop
     - Download and extract project [zip](https://github.com/fresheeh/MyMavenProject/archive/refs/heads/main.zip)
 - **Java Development Kit (JDK):** Version 17 or higher (Windows x64 Installer - https://download.oracle.com/java/17/archive/jdk-17.0.12_windows-x64_bin.exe).
 - **Google Chrome Web Browser:** https://www.google.com/chrome/index.html
