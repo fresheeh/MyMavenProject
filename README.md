@@ -33,9 +33,9 @@ This tells Windows where the root of the Maven installation is.
 
 **3.2:** Enter the following details:
 	
-**3.2.1:** Variable name: `MAVEN_HOME`
+**3.2.1: Variable name:*** `MAVEN_HOME`
 	
-**3.2.2:** Variable value: The absolute path to the folder where you extracted Maven (e.g., `C:\Program Files\Apache\apache-maven-3.9.11`).
+**3.2.2: Variable value:** The absolute path to the folder where you extracted Maven (e.g., `C:\Program Files\Apache\apache-maven-3.9.11`).
 
 **3.3:** Click **"OK"** to save the new variable.
 
