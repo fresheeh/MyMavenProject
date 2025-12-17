@@ -26,7 +26,7 @@ Recommended Location: `C:\Program Files\Apache\apache-maven-3.9.11` (or similar)
 **2.3:** Click the **"Environment Variables..."** button at the bottom of the window.
 
 
-**3.: Set the** `MAVEN_HOME` **Variable**
+**3. Set the** `MAVEN_HOME` **Variable:**
 This tells Windows where the root of the Maven installation is.
 
 **3.1:** In the **"User variables for [Your Name]"** section (the top box), click the **"New..."** button.
