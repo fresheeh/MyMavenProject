@@ -128,7 +128,7 @@ Email: nfresh24@gmail.com
 
 ### 1. Dynamic UI: Loading spinner implementing a FluentWait
 - I created a HTML file [resources/LoadingSpinnerWebPage.html](src/test/resources/LoadingSpinnerWebPage.html) with a loading spinner that will disappear after 3 seconds, then a text box will show.
-- [practice/LoadingSpinnerDynamicWait.java] This test case verifies that the loading spinner is visible and the text box not displayed before 3 seconds. Then after the 3 seconds, verifies that the loading spinner is not displayed and the text box is visible and displays the expected text.
+- [practice/LoadingSpinnerDynamicWait.java](src/test/java/org/web/practice/LoadingSpinnerDynamicWait.java) This test case verifies that the loading spinner is visible and the text box not displayed before 3 seconds. Then after the 3 seconds, verifies that the loading spinner is not displayed and the text box is visible and displays the expected text.
 - To accomplish this, a `FluentWait` is implemented to provide more stability to the test case by a defining custom polling frequency and ignoring specific exceptions during the polling duration. 
 
 First, the `FluentWait` is defined below:
@@ -179,20 +179,20 @@ WebElement finalTextBox = fluentWait.until(new Function<WebDriver, WebElement>()
 	
 
 ### 2. Locator Cookbook: Tricky element locators
-- 5 examples of tricky element locators in [practice/TrickyLocators.java]
-- Explanation in [Documentation/LocatorCookbook.md]
+- 5 examples of tricky element locators in [practice/TrickyLocators.java](src/test/java/org/web/practice/TrickyLocators.java)
+- Explanation in [Documentation/LocatorCookbook.md](Documentation/LocatorCookbook.md)
 
 ### 3. File Handling: Upload and Download Tests
-- [utilities/FileVerificationUtils.java]
+- [utilities/FileVerificationUtils.java](src/test/java/org/web/utilities/FileVerificationUtils.java)
 	- Helper class for File System operations: Hashing, cleaning up temp folders, and verifying download completion.
-- [practice/FileUploadDownloadTests.java]
+- [practice/FileUploadDownloadTests.java](src/test/java/org/web/practice/FileUploadDownloadTests.java)
 	- Test for uploading a file the standard way (best practice).
 	- Test for uploading a file using Robot class (flaky method).
 	- Test for verifying a downloaded file size and hash.
 
 
 ### 4. API Automation
-- [practice/ApiTestSuite.java]
+- [practice/ApiTestSuite.java](src/test/java/org/web/practice/ApiTestSuite.java)
 	- JSON Schema Definition.
 	- Mock Auth Token Flow.
 	- Positive & Negative response tests (includes JSON schema validation).
@@ -201,30 +201,30 @@ WebElement finalTextBox = fluentWait.until(new Function<WebDriver, WebElement>()
 
 ### 5. Data Integrity & Data Driven Testing
 - Registration flow implementing TestNG, Selenium, Mock database layer,Object Repository, and Page Object Model (POM)
-- [resources/registraction-data.json]: **The Data Model & JSON Data**
+- [resources/registraction-data.json](src/test/resources/registraction-data.json): **The Data Model & JSON Data**
 	- Defines what the data looks like.
 	- Supplies the data to `@DataProvider`.
-- [utilities/DatabaseUtil.java]: **Database Utility (The "Source of Truth")**
+- [utilities/DatabaseUtil.java](src/test/java/org/web/utilities/DatabaseUtil.java): **Database Utility (The "Source of Truth")**
 	- Implements a `MockDatabaseService`. In a real scenario, you would replace the `HashMap` logic with JDBC or Hibernate calls.
-- [dataproviders/UserDataProvider.java]: **The Data Provider & Fixture Factory**
+- [dataproviders/UserDataProvider.java](src/test/java/org/web/dataproviders/UserDataProvider.java): **The Data Provider & Fixture Factory**
 	- Defines `@DataProvider` method.
 	- This class reads the JSON and transforms it. 
 	- Crucially, it uses a Fixture Factory approach to ensure uniqueness (appending timestamps/UUIDs) so tests never fail due to duplicate data.
-- [resources/element.properties]: **Object Repository**
+- [resources/element.properties](src/test/resources/element.properties): **Object Repository**
 	- Defines all `By` element locators implemented in the POM by using key/value pairs.
 	- The major advantage of using object repository is the segregation of objects from test cases. If the locator value of one `WebElement` changes, only the object repository needs to be changed rather than making changes in all test cases in which the locator has been used. Maintaining an object repository increases the modularity of framework implementation.
-- [pages/AutomationExerciseSignupPage.java]: **Page Object Model Class**
+- [pages/AutomationExerciseSignupPage.java](src/test/java/org/web/pages/AutomationExerciseSignupPage.java): **Page Object Model Class**
 	- Page Object Model (POM) is a design pattern that creates an object repository for web UI elements. Each web page is represented by a corresponding class containing page-specific business logic and methods that perform actions.
 	- POM separates test code from page-specific code, significantly improving maintainability and reducing duplication in automation frameworks.
 	- In this example, `AutomationExerciseSignupPage` is the POM for the entire registration flow for demonstration purposes.
-- [practice/RegistrationTests.java]: **The Test Class (Putting it together)**
+- [practice/RegistrationTests.java](src/test/java/org/web/practice/RegistrationTests.java): **The Test Class (Putting it together)**
 	- This is where the logic flows: **Generate Unique Data → DB Seed (if needed) → UI Action → DB Verify → UI Verify → Rollback.**
 	
 
 ### 6. Cross-browser Consistency
-- [utilities/ScreenshotUtils.java]
+- [utilities/ScreenshotUtils.java](src/test/java/org/web/utilities/ScreenshotUtils.java)
 	- Captures a full-page screenshot and saves it.
 	- Prints screenshot location in the console.
-- [practice/SmokeVisualTest.java]
+- [practice/SmokeVisualTest.java](src/test/java/org/web/practice/SmokeVisualTest.java)
 	- If a test fails, the `@AfterMethod` automatically captures a PNG file in the `target/screenshots` directory, providing the state of the UI at the point of failure.
 	- Ensures cross-browser execution via `testng.xml` configuration and `@Parameter()` test method annotation.
