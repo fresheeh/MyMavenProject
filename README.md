@@ -200,8 +200,8 @@ WebElement finalTextBox = fluentWait.until(new Function<WebDriver, WebElement>()
 
 
 ### 5. Data Integrity & Data Driven Testing
-- Registration flow implementing TestNG, Selenium, Mock database layer,Object Repository, and Page Object Model (POM)
-- [resources/registraction-data.json](src/test/resources/registraction-data.json): **The Data Model & JSON Data**
+- Registration flow implementing TestNG, Selenium, Mock database layer, Object Repository, and Page Object Model (POM).
+- [resources/registration-data.json](src/test/resources/registration-data.json): **The Data Model & JSON Data**
 	- Defines what the data looks like.
 	- Supplies the data to `@DataProvider`.
 - [utilities/DatabaseUtil.java](src/test/java/org/web/utilities/DatabaseUtil.java): **Database Utility (The "Source of Truth")**
