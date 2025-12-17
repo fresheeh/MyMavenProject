@@ -120,12 +120,12 @@ mvn clean verify
 Email: nfresh24@gmail.com
 
 # Project Overview
-1. Dynamic UI: Loading spinner implementing a FluentWait
-2. Locator Cookbook: Tricky element locators
-3. File Handling: upload and download tests
-4. API Automation
-5. Data integrity & Data Driven Testing
-6. Cross-browser Consistency
+1. [Dynamic UI: Loading spinner implementing a FluentWait](#1-dynamic-ui-loading-spinner-implementing-a-fluentwait)
+2. [Locator Cookbook: Tricky element locators](#2-locator-cookbook-tricky-element-locators)
+3. [File Handling: upload and download tests](#3-file-handling-upload-and-download-tests)
+4. [API Automation](#4-api-automation)
+5. [Data integrity & Data Driven Testing](#5-data-integrity--data-driven-testing)
+6. [Cross-browser Consistency](#6-cross-browser-consistency)
 
 
 ### 1. Dynamic UI: Loading spinner implementing a FluentWait
