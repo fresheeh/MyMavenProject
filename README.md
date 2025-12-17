@@ -127,7 +127,7 @@ Email: nfresh24@gmail.com
 
 
 ### 1. Dynamic UI: Loading spinner implementing a FluentWait
-- I created a HTML file [resources/LoadingSpinnerWebPage.html] with a loading spinner that will disappear after 3 seconds, then a text box will show.
+- I created a HTML file [resources/LoadingSpinnerWebPage.html](LoadingSpinnerWebPage.html) with a loading spinner that will disappear after 3 seconds, then a text box will show.
 - [practice/LoadingSpinnerDynamicWait.java] This test case verifies that the loading spinner is visible and the text box not displayed before 3 seconds. Then after the 3 seconds, verifies that the loading spinner is not displayed and the text box is visible and displays the expected text.
 - To accomplish this, a `FluentWait` is implemented to provide more stability to the test case by a defining custom polling frequency and ignoring specific exceptions during the polling duration. 
 
