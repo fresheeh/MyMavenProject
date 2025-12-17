@@ -11,7 +11,7 @@ When to use it:
 - **Why it's resilient:** It doesn't care about the element's position, class, or ID; it only cares about the text content. `normalize-space()` helps mitigate issues caused by extra leading or trailing whitespace introduced by the framework.
 
 ## L2: CSS Selector by Dynamic ID Prefix
-### Selector: `input[value^='ECdITeCs:']`
+### Selector: `tr[id^='product']`
 
 When to use it:
 - When a dynamically generated ID always starts with a predictable, static string (e.g., `session-field-123456`, `session-field-98765`).
