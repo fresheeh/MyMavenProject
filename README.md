@@ -2,7 +2,7 @@
 
 ### Overview
 - Sandbox project to practice Selenium by exersicing automation testing concepts and use cases outlined in the [Project Overview](#project-overview)
-- More notes of particular concepts are written inside the comments of the relevant file(s).
+- More notes of particular applications are written inside the code comments of the relevant file(s).
 - [Usage](#usage) section 
 
 ### Installation Prerequisites
