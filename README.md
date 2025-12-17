@@ -1,16 +1,16 @@
-# My Selenium Automation Testing Sandbox
+# My Maven Project
 
 ### Overview
-- Sandbox project to practice Selenium automation testing.
+- Sandbox project to practice Selenium by exersicing automation testing concepts and use cases outline in the [Project Overview](#project-overview)
 - More notes of particular concepts are written inside the comments of the relevant file(s).
 
-### Installation 
+### Installation Prerequisites
 - **Java Development Kit (JDK):** Version 17 or higher (Windows x64 Installer - https://download.oracle.com/java/17/archive/jdk-17.0.12_windows-x64_bin.exe).
 - **Google Chrome Web Browser:** https://www.google.com/chrome/index.html
 - **Microsoft Edge Web Browser:** https://www.microsoft.com/en-us/edge/download?form=MA13FJ
 - **Firefox Web Browser:** https://www.firefox.com/en-US/thanks/
 
-- **Configuration Steps:** Ensure the `mvn` command is accessible from your system's command line. This requires setting the `MAVEN_HOME` environment variable and adding %MAVEN_HOME%\bin to your system's Path variable.
+- **Maven Configuration Steps:** Ensure the `mvn` command is accessible from your system's command line. This requires setting the `MAVEN_HOME` environment variable and adding `%MAVEN_HOME%\bin` to your system's Path variable.
 
 
 **1. Download and Extract Apache Maven**
@@ -58,9 +58,11 @@ This is the most critical step, as it tells the Command Prompt where to find the
 %MAVEN_HOME%\bin
 ```
 
-- *To ensure stability and bypass variable resolution issues, you can instead use the full explicit path (e.g., `C:\Program Files\Apache\apache-maven-3.9.11\bin`), which is often the most reliable method*.
+- **If you are experiencing difficulties:**
 
-- **If the editor shows a single string field:** Scroll to the end of the string, and add a semicolon followed by the path:
+	- *To ensure stability and bypass variable resolution issues, you can instead use the full explicit path (e.g., `C:\Program Files\Apache\apache-maven-3.9.11\bin`), which is often the most reliable method*.
+
+	- **If the editor shows a single string field:** Scroll to the end of the string, and add a semicolon followed by the path:
 
 ```
 ;%MAVEN_HOME%\bin
