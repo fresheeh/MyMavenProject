@@ -193,12 +193,13 @@ WebElement finalTextBox = fluentWait.until(new Function<WebDriver, WebElement>()
 - [utilities/FileVerificationUtils.java](src/test/java/org/web/utilities/FileVerificationUtils.java)
 	- Helper class for File System operations: Hashing, cleaning up temp folders, and verifying download completion.
 - [practice/FileUploadDownloadTests.java](src/test/java/org/web/practice/FileUploadDownloadTests.java)
-	- Test for uploading a file the standard way (best practice).
-	- Test for uploading a file using Robot class (flaky method).
-	- Test for verifying a downloaded file size and hash.
+	- Test uploading a file for standard HTML `<input>` elements (best practice).
+	- Test uploading a file, handling native OS dialogs using `Robot` class (flaky method, often last resort).
+	- Test verifying a downloaded file size and hash.
 
 
 ### 4. API Automation
+- Rest Assured is used go beyond simple status code checks. It includes JSON Schema validation to ensure the API response structure doesn't change unexpectedly, and Auth token flow is automated so the tests can run independently in any environment.
 - [practice/ApiTestSuite.java](src/test/java/org/web/practice/ApiTestSuite.java)
 	- JSON Schema Definition.
 	- Mock Auth Token Flow.
@@ -229,9 +230,11 @@ WebElement finalTextBox = fluentWait.until(new Function<WebDriver, WebElement>()
 	
 
 ### 6. Cross-browser Consistency
+- Ensures cross-browser execution (Chrome, Edge, and Firefox) via [testng.xml](testng.xml) configuration and `@Parameter()` test method annotation.
+- **(Goal):** "Functional tests only check if an element is present; they don't check if it's rendered correctly. I created ScreenshotUtils to capture page states and SmokeVisualTest to perform a baseline comparison. This ensures that even if a button 'works' technically, we catch instances where CSS changes might have pushed it off-screen or hidden it behind another element."
+	- (Currently stuck on this concept. I couldn't figure out how to get non-functional, visual regression testing to work using tools like Percy/Applitools.)
 - [utilities/ScreenshotUtils.java](src/test/java/org/web/utilities/ScreenshotUtils.java)
 	- Captures a full-page screenshot and saves it.
 	- Prints screenshot location in the console.
 - [practice/SmokeVisualTest.java](src/test/java/org/web/practice/SmokeVisualTest.java)
 	- If a test fails, the `@AfterMethod` automatically captures a PNG file in the `target/screenshots` directory, providing the state of the UI at the point of failure.
-	- Ensures cross-browser execution via `testng.xml` configuration and `@Parameter()` test method annotation.
