@@ -1,7 +1,8 @@
 # My Selenium Automation Testing Sandbox
 
 ### Overview
-Sandbox project to practice Selenium automation testing.  
+- Sandbox project to practice Selenium automation testing.
+- More notes of particular concepts are written inside the comments of the relevant file(s).
 
 ### Installation 
 - **Java Development Kit (JDK):** Version 17 or higher (Windows x64 Installer - https://download.oracle.com/java/17/archive/jdk-17.0.12_windows-x64_bin.exe).
