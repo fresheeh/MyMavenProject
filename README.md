@@ -231,7 +231,7 @@ WebElement finalTextBox = fluentWait.until(new Function<WebDriver, WebElement>()
 
 ### 6. Cross-browser Consistency
 - Ensures cross-browser execution (Chrome, Edge, and Firefox) via [testng.xml](testng.xml) configuration and `@Parameter()` test method annotation.
-- **(Goal):** "Functional tests only check if an element is present; they don't check if it's rendered correctly. I created ScreenshotUtils to capture page states and SmokeVisualTest to perform a baseline comparison. This ensures that even if a button 'works' technically, we catch instances where CSS changes might have pushed it off-screen or hidden it behind another element."
+- **(Goal Notes):** "Functional tests only check if an element is present; they don't check if it's rendered correctly. I created ScreenshotUtils to capture page states and SmokeVisualTest to perform a baseline comparison. This ensures that even if a button 'works' technically, we catch instances where CSS changes might have pushed it off-screen or hidden it behind another element."
 	- (Currently stuck on this concept. I couldn't figure out how to get non-functional, visual regression testing to work using tools like Percy/Applitools.)
 - [utilities/ScreenshotUtils.java](src/test/java/org/web/utilities/ScreenshotUtils.java)
 	- Captures a full-page screenshot and saves it.
