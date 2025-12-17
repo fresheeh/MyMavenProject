@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [TestingSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="tests" name="CrossBrowserExecution_Chrome(failed)">
+    <classes>
+      <class name="org.web.practice.SmokeVisualTest">
+        <parameter name="browser" value="chrome"/>
+        <methods>
+          <include name="tearDown"/>
+          <include name="smokeTestFlow"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- org.web.practice.SmokeVisualTest -->
+    </classes>
+  </test> <!-- CrossBrowserExecution_Chrome(failed) -->
+  <test thread-count="4" parallel="tests" name="CrossBrowserExecution_Edge(failed)">
+    <classes>
+      <class name="org.web.practice.SmokeVisualTest">
+        <parameter name="browser" value="edge"/>
+        <methods>
+          <include name="tearDown"/>
+          <include name="smokeTestFlow"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- org.web.practice.SmokeVisualTest -->
+    </classes>
+  </test> <!-- CrossBrowserExecution_Edge(failed) -->
+  <test thread-count="4" parallel="tests" name="CrossBrowserExecution_Firefox(failed)">
+    <classes>
+      <class name="org.web.practice.SmokeVisualTest">
+        <parameter name="browser" value="firefox"/>
+        <methods>
+          <include name="tearDown"/>
+          <include name="smokeTestFlow"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- org.web.practice.SmokeVisualTest -->
+    </classes>
+  </test> <!-- CrossBrowserExecution_Firefox(failed) -->
+</suite> <!-- Failed suite [TestingSuite] -->

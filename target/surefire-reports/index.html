@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-TestingSuite" class="navigator-link">
+              <span class="suite-name border-failed">TestingSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-TestingSuite" class="navigator-link ">
+                    <span>C:\Users\nfres\QA Workspace\MyMavenProject\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-TestingSuite" class="navigator-link ">
+                    <span class="test-stats">4 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-TestingSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-TestingSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-TestingSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-TestingSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-TestingSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">18 methods, 4 failed,   14 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestingSuite" class="hide-methods failed suite-TestingSuite"> (hide)</a> <!-- hide-methods failed suite-TestingSuite -->
+                      <a href="#" panel-name="suite-TestingSuite" class="show-methods failed suite-TestingSuite"> (show)</a> <!-- show-methods failed suite-TestingSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-TestingSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestingSuite" title="org.web.practice.SmokeVisualTest" class="method navigator-link" hash-for-method="smokeTestFlow">smokeTestFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestingSuite" title="org.web.practice.SmokeVisualTest" class="method navigator-link" hash-for-method="smokeTestFlow">smokeTestFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestingSuite" title="org.web.practice.SmokeVisualTest" class="method navigator-link" hash-for-method="smokeTestFlow">smokeTestFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestingSuite" title="org.web.practice.FileUploadDownloadTests" class="method navigator-link" hash-for-method="testNativeDialogUpload">testNativeDialogUpload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TestingSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TestingSuite" class="hide-methods passed suite-TestingSuite"> (hide)</a> <!-- hide-methods passed suite-TestingSuite -->
+                      <a href="#" panel-name="suite-TestingSuite" class="show-methods passed suite-TestingSuite"> (show)</a> <!-- show-methods passed suite-TestingSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-TestingSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestingSuite" title="org.web.practice.LoadingSpinnerDynamicWait" class="method navigator-link" hash-for-method="loadingSpinner">loadingSpinner</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestingSuite" title="org.web.practice.FileUploadDownloadTests" class="method navigator-link" hash-for-method="testFileDownloadVerification">testFileDownloadVerification</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestingSuite" title="org.web.practice.ApiTestSuite" class="method navigator-link" hash-for-method="testIdempotentPostScenario">testIdempotentPostScenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestingSuite" title="org.web.practice.ApiTestSuite" class="method navigator-link" hash-for-method="testNegativeResponse">testNegativeResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestingSuite" title="org.web.practice.ApiTestSuite" class="method navigator-link" hash-for-method="testPositiveResponse">testPositiveResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestingSuite" title="org.web.practice.FileUploadDownloadTests" class="method navigator-link" hash-for-method="testStandardFileUpload">testStandardFileUpload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestingSuite" title="org.web.practice.RegistrationTests" class="method navigator-link" hash-for-method="testUserRegistration({scenarioName=Standard User Registration, firstName=John, lastName=Doe, password=Password123!, addre...)">testUserRegistration({scenarioName=Standard User Registration, firstName=John, lastName=Doe, password=Password123!, addre...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestingSuite" title="org.web.practice.RegistrationTests" class="method navigator-link" hash-for-method="testUserRegistration({scenarioName=Admin Registration, firstName=Jane, lastName=Smith, password=AdminPass123!, address1=6...)">testUserRegistration({scenarioName=Admin Registration, firstName=Jane, lastName=Smith, password=AdminPass123!, address1=6...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestingSuite" title="org.web.practice.TrickyLocators" class="method navigator-link" hash-for-method="trickLocatorL5">trickLocatorL5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestingSuite" title="org.web.practice.TrickyLocators" class="method navigator-link" hash-for-method="trickyLocatorL2">trickyLocatorL2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestingSuite" title="org.web.practice.TrickyLocators" class="method navigator-link" hash-for-method="trickyLocatorL3">trickyLocatorL3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestingSuite" title="org.web.practice.TrickyLocators" class="method navigator-link" hash-for-method="trickyLocatorL4">trickyLocatorL4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestingSuite" title="org.web.practice.TrickyLocators" class="method navigator-link" hash-for-method="trickyLocatorL6">trickyLocatorL6</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TestingSuite" title="org.web.practice.TrickyLocators" class="method navigator-link" hash-for-method="trickyLocatorsL1">trickyLocatorsL1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-TestingSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TestingSuite" class="panel TestingSuite">
+          <div class="suite-TestingSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">org.web.practice.SmokeVisualTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="smokeTestFlow">
+                  </a> <!-- smokeTestFlow -->
+                  <span class="method-name">smokeTestFlow</span>
+                  <div class="stack-trace">java.lang.AssertionError: Page element header check failed after login. expected [Accounts Overview] but found [Financial Overview]
+	at org.web.practice.SmokeVisualTest.smokeTestFlow(SmokeVisualTest.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Smoke Test and Key Assertions)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="smokeTestFlow">
+                  </a> <!-- smokeTestFlow -->
+                  <span class="method-name">smokeTestFlow</span>
+                  <div class="stack-trace">java.lang.AssertionError: Page element header check failed after login. expected [Accounts Overview] but found [Financial Overview]
+	at org.web.practice.SmokeVisualTest.smokeTestFlow(SmokeVisualTest.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Smoke Test and Key Assertions)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="smokeTestFlow">
+                  </a> <!-- smokeTestFlow -->
+                  <span class="method-name">smokeTestFlow</span>
+                  <div class="stack-trace">java.lang.AssertionError: Page element header check failed after login. expected [Accounts Overview] but found [Financial Overview]
+	at org.web.practice.SmokeVisualTest.smokeTestFlow(SmokeVisualTest.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Smoke Test and Key Assertions)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestingSuite-class-failed -->
+          <div class="suite-TestingSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">org.web.practice.FileUploadDownloadTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNativeDialogUpload">
+                  </a> <!-- testNativeDialogUpload -->
+                  <span class="method-name">testNativeDialogUpload</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;submit&quot; data-qa=&quot;submit-button&quot; name=&quot;submit&quot; class=&quot;btn btn-primary pull-left submit_form&quot; value=&quot;Submit&quot;&gt; is not clickable at point (89, 590). Other element would receive the click: &lt;iframe id=&quot;aswift_3&quot; name=&quot;aswift_3&quot; style=&quot;min-height: auto; max-height: none; min-width: auto; max-width: none; width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; width=&quot;1005&quot; height=&quot;124&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; vspace=&quot;0&quot; hspace=&quot;0&quot; allowtransparency=&quot;true&quot; scrolling=&quot;no&quot; allow=&quot;attribution-reporting; run-ad-auction&quot; src=&quot;https://googleads.g.doubleclick.net/pagead/html/r20251211/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=4&amp;amp;uci=a!4&amp;amp;btvi=3&quot; data-google-container-id=&quot;a!4&quot; tabindex=&quot;0&quot; title=&quot;Advertisement&quot; aria-label=&quot;Advertisement&quot; data-google-query-id=&quot;CLuR4JGBw5EDFQe-jggdadIAfA&quot; data-load-complete=&quot;true&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=143.0.7499.110)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [877a81a4c4db9ad4c254ba7af0912232, clickElement {id=f.4A23DE9C2FD8D66339C4377547D9FB1B.d.266B108ED8F84F941A0DEBC5BFBA642C.e.41}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.110, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\nfres\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53065}, goog:processID: 6776, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53065/devtoo..., se:cdpVersion: 143.0.7499.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (877a81a4c4db9ad4c254ba7af0912232)] -&gt; xpath: //input[@type=&apos;submit&apos;]]
+Session ID: 877a81a4c4db9ad4c254ba7af0912232
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.web.practice.FileUploadDownloadTests.testNativeDialogUpload(FileUploadDownloadTests.java:141)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestingSuite-class-failed -->
+          <div class="suite-TestingSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.web.practice.LoadingSpinnerDynamicWait</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loadingSpinner">
+                  </a> <!-- loadingSpinner -->
+                  <span class="method-name">loadingSpinner</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestingSuite-class-passed -->
+          <div class="suite-TestingSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.web.practice.RegistrationTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUserRegistration({scenarioName=Standard User Registration, firstName=John, lastName=Doe, password=Password123!, addre...)">
+                  </a> <!-- testUserRegistration({scenarioName=Standard User Registration, firstName=John, lastName=Doe, password=Password123!, addre...) -->
+                  <span class="method-name">testUserRegistration</span>
+                  <span class="parameters">({scenarioName=Standard User Registration, firstName=John, lastName=Doe, password=Password123!, address1=1234 Wall St., country=United States, state=NY, city=New York, zipcode=45456, mobileNumber=1234567890, role=USER})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUserRegistration({scenarioName=Admin Registration, firstName=Jane, lastName=Smith, password=AdminPass123!, address1=6...)">
+                  </a> <!-- testUserRegistration({scenarioName=Admin Registration, firstName=Jane, lastName=Smith, password=AdminPass123!, address1=6...) -->
+                  <span class="method-name">testUserRegistration</span>
+                  <span class="parameters">({scenarioName=Admin Registration, firstName=Jane, lastName=Smith, password=AdminPass123!, address1=6789 Broadway Ln., country=India, state=Odisha, city=Khordha, zipcode=67676, mobileNumber=1098765432, role=ADMIN})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestingSuite-class-passed -->
+          <div class="suite-TestingSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.web.practice.FileUploadDownloadTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFileDownloadVerification">
+                  </a> <!-- testFileDownloadVerification -->
+                  <span class="method-name">testFileDownloadVerification</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testStandardFileUpload">
+                  </a> <!-- testStandardFileUpload -->
+                  <span class="method-name">testStandardFileUpload</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestingSuite-class-passed -->
+          <div class="suite-TestingSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.web.practice.ApiTestSuite</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testIdempotentPostScenario">
+                  </a> <!-- testIdempotentPostScenario -->
+                  <span class="method-name">testIdempotentPostScenario</span>
+                  <em>
+(Idempotent POST: Verifies that a request with the same Idempotency-Key is processed only once)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNegativeResponse">
+                  </a> <!-- testNegativeResponse -->
+                  <span class="method-name">testNegativeResponse</span>
+                  <em>
+(Negative: Tests retrieval with an invalid account number.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPositiveResponse">
+                  </a> <!-- testPositiveResponse -->
+                  <span class="method-name">testPositiveResponse</span>
+                  <em>
+(Positive: Validates successful statement retrieval and JSON Schema contract.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestingSuite-class-passed -->
+          <div class="suite-TestingSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.web.practice.TrickyLocators</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="trickLocatorL5">
+                  </a> <!-- trickLocatorL5 -->
+                  <span class="method-name">trickLocatorL5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="trickyLocatorL2">
+                  </a> <!-- trickyLocatorL2 -->
+                  <span class="method-name">trickyLocatorL2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="trickyLocatorL3">
+                  </a> <!-- trickyLocatorL3 -->
+                  <span class="method-name">trickyLocatorL3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="trickyLocatorL4">
+                  </a> <!-- trickyLocatorL4 -->
+                  <span class="method-name">trickyLocatorL4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="trickyLocatorL6">
+                  </a> <!-- trickyLocatorL6 -->
+                  <span class="method-name">trickyLocatorL6</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="trickyLocatorsL1">
+                  </a> <!-- trickyLocatorsL1 -->
+                  <span class="method-name">trickyLocatorsL1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestingSuite-class-passed -->
+        </div> <!-- panel TestingSuite -->
+        <div panel-name="test-xml-TestingSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\nfres\QA Workspace\MyMavenProject\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;TestingSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;SingleBrowserExecutionTests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.web.practice.LoadingSpinnerDynamicWait&quot;/&gt;
+      &lt;class name=&quot;org.web.practice.TrickyLocators&quot;/&gt;
+      &lt;class name=&quot;org.web.practice.FileUploadDownloadTests&quot;/&gt;
+      &lt;class name=&quot;org.web.practice.ApiTestSuite&quot;/&gt;
+      &lt;class name=&quot;org.web.practice.RegistrationTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SingleBrowserExecutionTests --&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;CrossBrowserExecution_Chrome&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.web.practice.SmokeVisualTest&quot;&gt;
+        &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+      &lt;/class&gt; &lt;!-- org.web.practice.SmokeVisualTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CrossBrowserExecution_Chrome --&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;CrossBrowserExecution_Firefox&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.web.practice.SmokeVisualTest&quot;&gt;
+        &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+      &lt;/class&gt; &lt;!-- org.web.practice.SmokeVisualTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CrossBrowserExecution_Firefox --&gt;
+  &lt;test thread-count=&quot;4&quot; parallel=&quot;tests&quot; name=&quot;CrossBrowserExecution_Edge&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.web.practice.SmokeVisualTest&quot;&gt;
+        &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
+      &lt;/class&gt; &lt;!-- org.web.practice.SmokeVisualTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CrossBrowserExecution_Edge --&gt;
+&lt;/suite&gt; &lt;!-- TestingSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TestingSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TestingSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">SingleBrowserExecutionTests (5 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">CrossBrowserExecution_Chrome (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">CrossBrowserExecution_Firefox (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">CrossBrowserExecution_Edge (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TestingSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TestingSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TestingSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TestingSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TestingSuite');
+function tableData_TestingSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(18);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'trickyLocatorL2')
+data.setCell(0, 2, 'org.web.practice.TrickyLocators')
+data.setCell(0, 3, 7595);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loadingSpinner')
+data.setCell(1, 2, 'org.web.practice.LoadingSpinnerDynamicWait')
+data.setCell(1, 3, 6869);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testNativeDialogUpload')
+data.setCell(2, 2, 'org.web.practice.FileUploadDownloadTests')
+data.setCell(2, 3, 6622);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testUserRegistration')
+data.setCell(3, 2, 'org.web.practice.RegistrationTests')
+data.setCell(3, 3, 6115);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testUserRegistration')
+data.setCell(4, 2, 'org.web.practice.RegistrationTests')
+data.setCell(4, 3, 5088);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testFileDownloadVerification')
+data.setCell(5, 2, 'org.web.practice.FileUploadDownloadTests')
+data.setCell(5, 3, 3671);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'trickyLocatorL4')
+data.setCell(6, 2, 'org.web.practice.TrickyLocators')
+data.setCell(6, 3, 2787);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'trickyLocatorsL1')
+data.setCell(7, 2, 'org.web.practice.TrickyLocators')
+data.setCell(7, 3, 2590);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'trickyLocatorL3')
+data.setCell(8, 2, 'org.web.practice.TrickyLocators')
+data.setCell(8, 3, 2513);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'trickyLocatorL6')
+data.setCell(9, 2, 'org.web.practice.TrickyLocators')
+data.setCell(9, 3, 2292);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'trickLocatorL5')
+data.setCell(10, 2, 'org.web.practice.TrickyLocators')
+data.setCell(10, 3, 1981);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'smokeTestFlow')
+data.setCell(11, 2, 'org.web.practice.SmokeVisualTest')
+data.setCell(11, 3, 1954);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'smokeTestFlow')
+data.setCell(12, 2, 'org.web.practice.SmokeVisualTest')
+data.setCell(12, 3, 1581);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'smokeTestFlow')
+data.setCell(13, 2, 'org.web.practice.SmokeVisualTest')
+data.setCell(13, 3, 1545);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testNegativeResponse')
+data.setCell(14, 2, 'org.web.practice.ApiTestSuite')
+data.setCell(14, 3, 1440);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testPositiveResponse')
+data.setCell(15, 2, 'org.web.practice.ApiTestSuite')
+data.setCell(15, 3, 793);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testStandardFileUpload')
+data.setCell(16, 2, 'org.web.practice.FileUploadDownloadTests')
+data.setCell(16, 3, 518);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testIdempotentPostScenario')
+data.setCell(17, 2, 'org.web.practice.ApiTestSuite')
+data.setCell(17, 3, 0);
+window.suiteTableData['TestingSuite']= { tableData: data, tableDiv: 'times-div-TestingSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-TestingSuite">
+              </div> <!-- times-div-TestingSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TestingSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TestingSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TestingSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TestingSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.web.practice.ApiTestSuite</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupAndAuth</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.web.practice.LoadingSpinnerDynamicWait</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loadingSpinner</span>
+                <span class="method-start">480 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.web.practice.SmokeVisualTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">480 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(firefox)</span>
+                <span class="method-start">480 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(edge)</span>
+                <span class="method-start">480 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">smokeTestFlow</span>
+                <span class="method-start">3377 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">smokeTestFlow</span>
+                <span class="method-start">3467 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=smokeTestFlow status=FAILURE method=SmokeVisualTest.smokeTestFlow()[pri:0, instance...)</span>
+                <span class="method-start">4970 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=smokeTestFlow status=FAILURE method=SmokeVisualTest.smokeTestFlow()[pri:0, instance...)</span>
+                <span class="method-start">5014 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.web.practice.TrickyLocators</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7351 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.web.practice.SmokeVisualTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">smokeTestFlow</span>
+                <span class="method-start">8292 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.web.practice.TrickyLocators</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">trickLocatorL5</span>
+                <span class="method-start">8651 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.web.practice.SmokeVisualTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=smokeTestFlow status=FAILURE method=SmokeVisualTest.smokeTestFlow()[pri:0, instance...)</span>
+                <span class="method-start">10247 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.web.practice.TrickyLocators</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">10633 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">10935 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">trickyLocatorL2</span>
+                <span class="method-start">11934 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">19530 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">19734 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">trickyLocatorL3</span>
+                <span class="method-start">20532 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">23045 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">23301 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">trickyLocatorL4</span>
+                <span class="method-start">24035 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">26824 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">27122 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">trickyLocatorL6</span>
+                <span class="method-start">27938 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">30231 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">30490 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">trickyLocatorsL1</span>
+                <span class="method-start">31294 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">33885 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.web.practice.FileUploadDownloadTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">34136 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testFileDownloadVerification</span>
+                <span class="method-start">34783 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testNativeDialogUpload</span>
+                <span class="method-start">38455 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testStandardFileUpload</span>
+                <span class="method-start">45079 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">45597 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.web.practice.ApiTestSuite</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testIdempotentPostScenario</span>
+                <span class="method-start">45800 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testNegativeResponse</span>
+                <span class="method-start">45801 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testPositiveResponse</span>
+                <span class="method-start">47241 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.web.practice.RegistrationTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">48092 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testUserRegistration({scenarioName=Standard User Registration, firstName=John, lastName=Doe, password=Password123!, addre...)</span>
+                <span class="method-start">49993 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">55081 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">55275 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testUserRegistration({scenarioName=Admin Registration, firstName=Jane, lastName=Smith, password=AdminPass123!, address1=6...)</span>
+                <span class="method-start">57137 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">63252 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -1,0 +1,14 @@
+org\web\practice\LoadingSpinnerDynamicWait$1.class
+org\web\practice\ApiTestSuite.class
+org\web\practice\FileUploadDownloadTests.class
+org\web\dataproviders\UserDataProvider$1.class
+org\web\practice\LoadingSpinnerDynamicWait.class
+org\web\utilities\FileVerificationUtils.class
+org\web\practice\SmokeVisualTest.class
+org\web\utilities\DatabaseUtil.class
+org\web\dataproviders\UserDataProvider.class
+org\web\practice\TrickyLocators.class
+org\web\practice\RegistrationTests.class
+org\web\utilities\ScreenshotUtils.class
+org\web\pages\AutomationExerciseSignupPage.class
+org\web\utilities\ReadProperties.class

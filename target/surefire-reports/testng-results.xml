@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="18" passed="14" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-16T16:03:40 EST" name="TestingSuite" finished-at="2025-12-16T16:04:43 EST" duration-ms="63037">
+    <groups>
+    </groups>
+    <test started-at="2025-12-16T16:03:40 EST" name="CrossBrowserExecution_Chrome" finished-at="2025-12-16T16:03:45 EST" duration-ms="5361">
+      <class name="org.web.practice.SmokeVisualTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:org.web.practice.SmokeVisualTest@710f4dc7]" started-at="2025-12-16T16:03:40 EST" name="setup" finished-at="2025-12-16T16:03:43 EST" duration-ms="2896" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="smokeTestFlow()[pri:0, instance:org.web.practice.SmokeVisualTest@710f4dc7]" started-at="2025-12-16T16:03:43 EST" name="smokeTestFlow" description="Smoke Test and Key Assertions" finished-at="2025-12-16T16:03:44 EST" duration-ms="1581" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Page element header check failed after login. expected [Accounts Overview] but found [Financial Overview]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Page element header check failed after login. expected [Accounts Overview] but found [Financial Overview]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.web.practice.SmokeVisualTest.smokeTestFlow(SmokeVisualTest.java:90)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- smokeTestFlow -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:org.web.practice.SmokeVisualTest@710f4dc7]" started-at="2025-12-16T16:03:44 EST" name="tearDown" finished-at="2025-12-16T16:03:45 EST" duration-ms="817" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=smokeTestFlow status=FAILURE method=SmokeVisualTest.smokeTestFlow()[pri:0, instance:org.web.practice.SmokeVisualTest@710f4dc7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.web.practice.SmokeVisualTest -->
+    </test> <!-- CrossBrowserExecution_Chrome -->
+    <test started-at="2025-12-16T16:03:40 EST" name="CrossBrowserExecution_Edge" finished-at="2025-12-16T16:03:46 EST" duration-ms="6260">
+      <class name="org.web.practice.ApiTestSuite">
+        <test-method is-config="true" signature="setupAndAuth()[pri:0, instance:org.web.practice.ApiTestSuite@327514f]" started-at="2025-12-16T16:03:40 EST" name="setupAndAuth" finished-at="2025-12-16T16:03:40 EST" duration-ms="421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupAndAuth -->
+      </class> <!-- org.web.practice.ApiTestSuite -->
+      <class name="org.web.practice.SmokeVisualTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:org.web.practice.SmokeVisualTest@510f3d34]" started-at="2025-12-16T16:03:40 EST" name="setup" finished-at="2025-12-16T16:03:43 EST" duration-ms="2987" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="smokeTestFlow()[pri:0, instance:org.web.practice.SmokeVisualTest@510f3d34]" started-at="2025-12-16T16:03:43 EST" name="smokeTestFlow" description="Smoke Test and Key Assertions" finished-at="2025-12-16T16:03:45 EST" duration-ms="1545" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Page element header check failed after login. expected [Accounts Overview] but found [Financial Overview]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Page element header check failed after login. expected [Accounts Overview] but found [Financial Overview]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.web.practice.SmokeVisualTest.smokeTestFlow(SmokeVisualTest.java:90)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- smokeTestFlow -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:org.web.practice.SmokeVisualTest@510f3d34]" started-at="2025-12-16T16:03:45 EST" name="tearDown" finished-at="2025-12-16T16:03:46 EST" duration-ms="1675" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=smokeTestFlow status=FAILURE method=SmokeVisualTest.smokeTestFlow()[pri:0, instance:org.web.practice.SmokeVisualTest@510f3d34] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.web.practice.SmokeVisualTest -->
+    </test> <!-- CrossBrowserExecution_Edge -->
+    <test started-at="2025-12-16T16:03:40 EST" name="CrossBrowserExecution_Firefox" finished-at="2025-12-16T16:03:52 EST" duration-ms="11797">
+      <class name="org.web.practice.SmokeVisualTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:org.web.practice.SmokeVisualTest@65e98b1c]" started-at="2025-12-16T16:03:40 EST" name="setup" finished-at="2025-12-16T16:03:48 EST" duration-ms="7811" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="smokeTestFlow()[pri:0, instance:org.web.practice.SmokeVisualTest@65e98b1c]" started-at="2025-12-16T16:03:48 EST" name="smokeTestFlow" description="Smoke Test and Key Assertions" finished-at="2025-12-16T16:03:50 EST" duration-ms="1954" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Page element header check failed after login. expected [Accounts Overview] but found [Financial Overview]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Page element header check failed after login. expected [Accounts Overview] but found [Financial Overview]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.web.practice.SmokeVisualTest.smokeTestFlow(SmokeVisualTest.java:90)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- smokeTestFlow -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:org.web.practice.SmokeVisualTest@65e98b1c]" started-at="2025-12-16T16:03:50 EST" name="tearDown" finished-at="2025-12-16T16:03:52 EST" duration-ms="1979" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=smokeTestFlow status=FAILURE method=SmokeVisualTest.smokeTestFlow()[pri:0, instance:org.web.practice.SmokeVisualTest@65e98b1c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.web.practice.SmokeVisualTest -->
+    </test> <!-- CrossBrowserExecution_Firefox -->
+    <test started-at="2025-12-16T16:03:40 EST" name="SingleBrowserExecutionTests" finished-at="2025-12-16T16:04:43 EST" duration-ms="63037">
+      <class name="org.web.practice.LoadingSpinnerDynamicWait">
+        <test-method signature="loadingSpinner()[pri:0, instance:org.web.practice.LoadingSpinnerDynamicWait@f6efaab]" started-at="2025-12-16T16:03:40 EST" name="loadingSpinner" finished-at="2025-12-16T16:03:47 EST" duration-ms="6869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadingSpinner -->
+      </class> <!-- org.web.practice.LoadingSpinnerDynamicWait -->
+      <class name="org.web.practice.RegistrationTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.web.practice.RegistrationTests@5b12b668]" started-at="2025-12-16T16:04:28 EST" name="setup" finished-at="2025-12-16T16:04:30 EST" duration-ms="1900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testUserRegistration(java.util.Map)[pri:0, instance:org.web.practice.RegistrationTests@5b12b668]" started-at="2025-12-16T16:04:30 EST" name="testUserRegistration" data-provider="registrationData" finished-at="2025-12-16T16:04:35 EST" duration-ms="5088" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{scenarioName=Standard User Registration, firstName=John, lastName=Doe, password=Password123!, address1=1234 Wall St., country=United States, state=NY, city=New York, zipcode=45456, mobileNumber=1234567890, role=USER}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.web.practice.RegistrationTests@5b12b668]" started-at="2025-12-16T16:04:35 EST" name="tearDown" finished-at="2025-12-16T16:04:35 EST" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.web.practice.RegistrationTests@5b12b668]" started-at="2025-12-16T16:04:35 EST" name="setup" finished-at="2025-12-16T16:04:37 EST" duration-ms="1860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testUserRegistration(java.util.Map)[pri:0, instance:org.web.practice.RegistrationTests@5b12b668]" started-at="2025-12-16T16:04:37 EST" name="testUserRegistration" data-provider="registrationData" finished-at="2025-12-16T16:04:43 EST" duration-ms="6115" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{scenarioName=Admin Registration, firstName=Jane, lastName=Smith, password=AdminPass123!, address1=6789 Broadway Ln., country=India, state=Odisha, city=Khordha, zipcode=67676, mobileNumber=1098765432, role=ADMIN}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUserRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.web.practice.RegistrationTests@5b12b668]" started-at="2025-12-16T16:04:43 EST" name="tearDown" finished-at="2025-12-16T16:04:43 EST" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.web.practice.RegistrationTests -->
+      <class name="org.web.practice.ApiTestSuite">
+        <test-method signature="testIdempotentPostScenario()[pri:0, instance:org.web.practice.ApiTestSuite@327514f]" started-at="2025-12-16T16:04:25 EST" name="testIdempotentPostScenario" description="Idempotent POST: Verifies that a request with the same Idempotency-Key is processed only once" finished-at="2025-12-16T16:04:25 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testIdempotentPostScenario -->
+        <test-method signature="testNegativeResponse()[pri:0, instance:org.web.practice.ApiTestSuite@327514f]" started-at="2025-12-16T16:04:25 EST" name="testNegativeResponse" description="Negative: Tests retrieval with an invalid account number." finished-at="2025-12-16T16:04:27 EST" duration-ms="1440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeResponse -->
+        <test-method signature="testPositiveResponse()[pri:0, instance:org.web.practice.ApiTestSuite@327514f]" started-at="2025-12-16T16:04:27 EST" name="testPositiveResponse" description="Positive: Validates successful statement retrieval and JSON Schema contract." finished-at="2025-12-16T16:04:28 EST" duration-ms="793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPositiveResponse -->
+      </class> <!-- org.web.practice.ApiTestSuite -->
+      <class name="org.web.practice.TrickyLocators">
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.web.practice.TrickyLocators@7b98f307]" started-at="2025-12-16T16:03:47 EST" name="setup" finished-at="2025-12-16T16:03:48 EST" duration-ms="1300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="trickLocatorL5()[pri:0, instance:org.web.practice.TrickyLocators@7b98f307]" started-at="2025-12-16T16:03:48 EST" name="trickLocatorL5" finished-at="2025-12-16T16:03:50 EST" duration-ms="1981" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- trickLocatorL5 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.web.practice.TrickyLocators@7b98f307]" started-at="2025-12-16T16:03:50 EST" name="tearDown" finished-at="2025-12-16T16:03:50 EST" duration-ms="301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.web.practice.TrickyLocators@7b98f307]" started-at="2025-12-16T16:03:50 EST" name="setup" finished-at="2025-12-16T16:03:51 EST" duration-ms="999" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="trickyLocatorL2()[pri:0, instance:org.web.practice.TrickyLocators@7b98f307]" started-at="2025-12-16T16:03:51 EST" name="trickyLocatorL2" finished-at="2025-12-16T16:03:59 EST" duration-ms="7595" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- trickyLocatorL2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.web.practice.TrickyLocators@7b98f307]" started-at="2025-12-16T16:03:59 EST" name="tearDown" finished-at="2025-12-16T16:03:59 EST" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.web.practice.TrickyLocators@7b98f307]" started-at="2025-12-16T16:03:59 EST" name="setup" finished-at="2025-12-16T16:04:00 EST" duration-ms="798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="trickyLocatorL3()[pri:0, instance:org.web.practice.TrickyLocators@7b98f307]" started-at="2025-12-16T16:04:00 EST" name="trickyLocatorL3" finished-at="2025-12-16T16:04:03 EST" duration-ms="2513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- trickyLocatorL3 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.web.practice.TrickyLocators@7b98f307]" started-at="2025-12-16T16:04:03 EST" name="tearDown" finished-at="2025-12-16T16:04:03 EST" duration-ms="256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.web.practice.TrickyLocators@7b98f307]" started-at="2025-12-16T16:04:03 EST" name="setup" finished-at="2025-12-16T16:04:04 EST" duration-ms="733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="trickyLocatorL4()[pri:0, instance:org.web.practice.TrickyLocators@7b98f307]" started-at="2025-12-16T16:04:04 EST" name="trickyLocatorL4" finished-at="2025-12-16T16:04:06 EST" duration-ms="2787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- trickyLocatorL4 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.web.practice.TrickyLocators@7b98f307]" started-at="2025-12-16T16:04:06 EST" name="tearDown" finished-at="2025-12-16T16:04:07 EST" duration-ms="296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.web.practice.TrickyLocators@7b98f307]" started-at="2025-12-16T16:04:07 EST" name="setup" finished-at="2025-12-16T16:04:07 EST" duration-ms="815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="trickyLocatorL6()[pri:0, instance:org.web.practice.TrickyLocators@7b98f307]" started-at="2025-12-16T16:04:07 EST" name="trickyLocatorL6" finished-at="2025-12-16T16:04:10 EST" duration-ms="2292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- trickyLocatorL6 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.web.practice.TrickyLocators@7b98f307]" started-at="2025-12-16T16:04:10 EST" name="tearDown" finished-at="2025-12-16T16:04:10 EST" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.web.practice.TrickyLocators@7b98f307]" started-at="2025-12-16T16:04:10 EST" name="setup" finished-at="2025-12-16T16:04:11 EST" duration-ms="804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="trickyLocatorsL1()[pri:0, instance:org.web.practice.TrickyLocators@7b98f307]" started-at="2025-12-16T16:04:11 EST" name="trickyLocatorsL1" finished-at="2025-12-16T16:04:13 EST" duration-ms="2590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- trickyLocatorsL1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.web.practice.TrickyLocators@7b98f307]" started-at="2025-12-16T16:04:13 EST" name="tearDown" finished-at="2025-12-16T16:04:14 EST" duration-ms="251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.web.practice.TrickyLocators -->
+      <class name="org.web.practice.FileUploadDownloadTests">
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.web.practice.FileUploadDownloadTests@6a6cb05c]" started-at="2025-12-16T16:04:14 EST" name="setup" finished-at="2025-12-16T16:04:14 EST" duration-ms="646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testFileDownloadVerification()[pri:0, instance:org.web.practice.FileUploadDownloadTests@6a6cb05c]" started-at="2025-12-16T16:04:14 EST" name="testFileDownloadVerification" finished-at="2025-12-16T16:04:18 EST" duration-ms="3671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFileDownloadVerification -->
+        <test-method signature="testNativeDialogUpload()[pri:0, instance:org.web.practice.FileUploadDownloadTests@6a6cb05c]" started-at="2025-12-16T16:04:18 EST" name="testNativeDialogUpload" finished-at="2025-12-16T16:04:25 EST" duration-ms="6622" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <input type="submit" data-qa="submit-button" name="submit" class="btn btn-primary pull-left submit_form" value="Submit"> is not clickable at point (89, 590). Other element would receive the click: <iframe id="aswift_3" name="aswift_3" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20251211/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=4&amp;uci=a!4&amp;btvi=3" data-google-container-id="a!4" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CLuR4JGBw5EDFQe-jggdadIAfA" data-load-complete="true"></iframe>
+  (Session info: chrome=143.0.7499.110)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [877a81a4c4db9ad4c254ba7af0912232, clickElement {id=f.4A23DE9C2FD8D66339C4377547D9FB1B.d.266B108ED8F84F941A0DEBC5BFBA642C.e.41}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.110, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\nfres\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53065}, goog:processID: 6776, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53065/devtoo..., se:cdpVersion: 143.0.7499.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (877a81a4c4db9ad4c254ba7af0912232)] -> xpath: //input[@type='submit']]
+Session ID: 877a81a4c4db9ad4c254ba7af0912232]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="submit" data-qa="submit-button" name="submit" class="btn btn-primary pull-left submit_form" value="Submit"> is not clickable at point (89, 590). Other element would receive the click: <iframe id="aswift_3" name="aswift_3" style="min-height: auto; max-height: none; min-width: auto; max-width: none; width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20251211/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=4&amp;uci=a!4&amp;btvi=3" data-google-container-id="a!4" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CLuR4JGBw5EDFQe-jggdadIAfA" data-load-complete="true"></iframe>
+  (Session info: chrome=143.0.7499.110)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [877a81a4c4db9ad4c254ba7af0912232, clickElement {id=f.4A23DE9C2FD8D66339C4377547D9FB1B.d.266B108ED8F84F941A0DEBC5BFBA642C.e.41}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.110, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\nfres\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53065}, goog:processID: 6776, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53065/devtoo..., se:cdpVersion: 143.0.7499.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (877a81a4c4db9ad4c254ba7af0912232)] -> xpath: //input[@type='submit']]
+Session ID: 877a81a4c4db9ad4c254ba7af0912232
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at org.web.practice.FileUploadDownloadTests.testNativeDialogUpload(FileUploadDownloadTests.java:141)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNativeDialogUpload -->
+        <test-method signature="testStandardFileUpload()[pri:0, instance:org.web.practice.FileUploadDownloadTests@6a6cb05c]" started-at="2025-12-16T16:04:25 EST" name="testStandardFileUpload" finished-at="2025-12-16T16:04:25 EST" duration-ms="518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStandardFileUpload -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:org.web.practice.FileUploadDownloadTests@6a6cb05c]" started-at="2025-12-16T16:04:25 EST" name="teardown" finished-at="2025-12-16T16:04:25 EST" duration-ms="202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- org.web.practice.FileUploadDownloadTests -->
+    </test> <!-- SingleBrowserExecutionTests -->
+  </suite> <!-- TestingSuite -->
+</testng-results>

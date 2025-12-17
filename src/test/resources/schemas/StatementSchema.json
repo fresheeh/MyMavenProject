@@ -1,0 +1,39 @@
+{
+	"type": "object",
+	"required": ["result", "message"],
+	"properties": {
+		"result": {
+			"type": "object",
+			"required": ["statements"],
+			"properties": {
+				"statements": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"required": ["TRANSACTION_ID", "ACCOUNT_NO", "DATE_OF_TRANSACTION", "AMOUNT", "TRANSACTION_TYPE", "DESCRIPTION"],
+						"properties": {
+							"TRANSACTION_ID": { "type": "string" },
+							"ACCOUNT_NO": { "type": "string" },
+							"DATE_OF_TRANSACTION": { "type": "string" },
+							"AMOUNT": { "type": "string" },
+							"TRANSACTION_TYPE": { "type": "string" },
+							"DESCRIPTION": { "type": "string" }
+						},
+						"additionalProperties": false
+					}
+				}
+			},
+			"additionalProperties": false
+		},
+		"message": {
+			"type": "object",
+			"required": ["ErrorCode:", "ErrorMsg:"],
+			"properties": {
+				"ErrorCode:": { "type": "integer" },
+				"ErrorMsg:": { "type": "string" }
+			},
+			"additionalProperties": false
+		}
+	},
+	"additionalProperties": false
+}

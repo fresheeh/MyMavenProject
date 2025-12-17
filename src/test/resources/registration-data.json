@@ -1,0 +1,28 @@
+[
+  {
+    "scenarioName": "Standard User Registration",
+    "firstName": "John",
+    "lastName": "Doe",
+    "password": "Password123!",
+	"address1": "1234 Wall St.",
+	"country": "United States",
+	"state": "NY",
+	"city": "New York",
+	"zipcode": "45456",
+	"mobileNumber": "1234567890",
+    "role": "USER"
+  },
+  {
+    "scenarioName": "Admin Registration",
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "password": "AdminPass123!",
+	"address1": "6789 Broadway Ln.",
+	"country": "India",
+	"state": "Odisha",
+	"city": "Khordha",
+	"zipcode": "67676",
+	"mobileNumber": "1098765432",
+    "role": "ADMIN"
+  }
+]

@@ -1,0 +1,235 @@
+<html>
+<head>
+<title>TestNG:  SingleBrowserExecutionTests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>SingleBrowserExecutionTests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>14/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Dec 16 16:03:40 EST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>63 seconds (63037 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.web.practice.FileUploadDownloadTests.testNativeDialogUpload()'><b>testNativeDialogUpload</b><br>Test class: org.web.practice.FileUploadDownloadTests</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;submit&quot; data-qa=&quot;submit-button&quot; name=&quot;submit&quot; class=&quot;btn btn-primary pull-left submit_form&quot; value=&quot;Submit&quot;&gt; is not clickable at point (89, 590). Other element would receive the click: &lt;iframe id=&quot;aswift_3&quot; name=&quot;aswift_3&quot; style=&quot;min-height: auto; max-height: none; min-width: auto; max-width: none; width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; width=&quot;1005&quot; height=&quot;124&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; vspace=&quot;0&quot; hspace=&quot;0&quot; allowtransparency=&quot;true&quot; scrolling=&quot;no&quot; allow=&quot;attribution-reporting; run-ad-auction&quot; src=&quot;https://googleads.g.doubleclick.net/pagead/html/r20251211/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=4&amp;amp;uci=a!4&amp;amp;btvi=3&quot; data-google-container-id=&quot;a!4&quot; tabindex=&quot;0&quot; title=&quot;Advertisement&quot; aria-label=&quot;Advertisement&quot; data-google-query-id=&quot;CLuR4JGBw5EDFQe-jggdadIAfA&quot; data-load-complete=&quot;true&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=143.0.7499.110)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [877a81a4c4db9ad4c254ba7af0912232, clickElement {id=f.4A23DE9C2FD8D66339C4377547D9FB1B.d.266B108ED8F84F941A0DEBC5BFBA642C.e.41}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.110, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\nfres\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53065}, goog:processID: 6776, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53065/devtoo..., se:cdpVersion: 143.0.7499.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (877a81a4c4db9ad4c254ba7af0912232)] -&gt; xpath: //input[@type=&apos;submit&apos;]]
+Session ID: 877a81a4c4db9ad4c254ba7af0912232
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.web.practice.FileUploadDownloadTests.testNativeDialogUpload(FileUploadDownloadTests.java:141)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1002426755", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1002426755'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;input type=&quot;submit&quot; data-qa=&quot;submit-button&quot; name=&quot;submit&quot; class=&quot;btn btn-primary pull-left submit_form&quot; value=&quot;Submit&quot;&gt; is not clickable at point (89, 590). Other element would receive the click: &lt;iframe id=&quot;aswift_3&quot; name=&quot;aswift_3&quot; style=&quot;min-height: auto; max-height: none; min-width: auto; max-width: none; width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;&quot; sandbox=&quot;allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot; width=&quot;1005&quot; height=&quot;124&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; vspace=&quot;0&quot; hspace=&quot;0&quot; allowtransparency=&quot;true&quot; scrolling=&quot;no&quot; allow=&quot;attribution-reporting; run-ad-auction&quot; src=&quot;https://googleads.g.doubleclick.net/pagead/html/r20251211/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271801&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=1&amp;amp;ifi=4&amp;amp;uci=a!4&amp;amp;btvi=3&quot; data-google-container-id=&quot;a!4&quot; tabindex=&quot;0&quot; title=&quot;Advertisement&quot; aria-label=&quot;Advertisement&quot; data-google-query-id=&quot;CLuR4JGBw5EDFQe-jggdadIAfA&quot; data-load-complete=&quot;true&quot;&gt;&lt;/iframe&gt;
+  (Session info: chrome=143.0.7499.110)
+Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [877a81a4c4db9ad4c254ba7af0912232, clickElement {id=f.4A23DE9C2FD8D66339C4377547D9FB1B.d.266B108ED8F84F941A0DEBC5BFBA642C.e.41}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.110, chrome: {chromedriverVersion: 143.0.7499.42 (24bdc8c48a0c..., userDataDir: C:\Users\nfres\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53065}, goog:processID: 6776, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53065/devtoo..., se:cdpVersion: 143.0.7499.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (877a81a4c4db9ad4c254ba7af0912232)] -&gt; xpath: //input[@type=&apos;submit&apos;]]
+Session ID: 877a81a4c4db9ad4c254ba7af0912232
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.web.practice.FileUploadDownloadTests.testNativeDialogUpload(FileUploadDownloadTests.java:141)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>6</td>
+<td>org.web.practice.FileUploadDownloadTests@6a6cb05c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.web.practice.TrickyLocators.trickyLocatorL3()'><b>trickyLocatorL3</b><br>Test class: org.web.practice.TrickyLocators</td>
+<td></td>
+<td>2</td>
+<td>org.web.practice.TrickyLocators@7b98f307</td></tr>
+<tr>
+<td title='org.web.practice.TrickyLocators.trickLocatorL5()'><b>trickLocatorL5</b><br>Test class: org.web.practice.TrickyLocators</td>
+<td></td>
+<td>1</td>
+<td>org.web.practice.TrickyLocators@7b98f307</td></tr>
+<tr>
+<td title='org.web.practice.FileUploadDownloadTests.testStandardFileUpload()'><b>testStandardFileUpload</b><br>Test class: org.web.practice.FileUploadDownloadTests</td>
+<td></td>
+<td>0</td>
+<td>org.web.practice.FileUploadDownloadTests@6a6cb05c</td></tr>
+<tr>
+<td title='org.web.practice.LoadingSpinnerDynamicWait.loadingSpinner()'><b>loadingSpinner</b><br>Test class: org.web.practice.LoadingSpinnerDynamicWait</td>
+<td></td>
+<td>6</td>
+<td>org.web.practice.LoadingSpinnerDynamicWait@f6efaab</td></tr>
+<tr>
+<td title='org.web.practice.TrickyLocators.trickyLocatorsL1()'><b>trickyLocatorsL1</b><br>Test class: org.web.practice.TrickyLocators</td>
+<td></td>
+<td>2</td>
+<td>org.web.practice.TrickyLocators@7b98f307</td></tr>
+<tr>
+<td title='org.web.practice.FileUploadDownloadTests.testFileDownloadVerification()'><b>testFileDownloadVerification</b><br>Test class: org.web.practice.FileUploadDownloadTests</td>
+<td></td>
+<td>3</td>
+<td>org.web.practice.FileUploadDownloadTests@6a6cb05c</td></tr>
+<tr>
+<td title='org.web.practice.TrickyLocators.trickyLocatorL4()'><b>trickyLocatorL4</b><br>Test class: org.web.practice.TrickyLocators</td>
+<td></td>
+<td>2</td>
+<td>org.web.practice.TrickyLocators@7b98f307</td></tr>
+<tr>
+<td title='org.web.practice.RegistrationTests.testUserRegistration()'><b>testUserRegistration</b><br>Test class: org.web.practice.RegistrationTests<br>Parameters: {scenarioName=Standard User Registration, firstName=John, lastName=Doe, password=Password123!, address1=1234 Wall St., country=United States, state=NY, city=New York, zipcode=45456, mobileNumber=1234567890, role=USER}</td>
+<td></td>
+<td>5</td>
+<td>org.web.practice.RegistrationTests@5b12b668</td></tr>
+<tr>
+<td title='org.web.practice.ApiTestSuite.testPositiveResponse()'><b>testPositiveResponse</b><br>Test class: org.web.practice.ApiTestSuite<br>Test method: Positive: Validates successful statement retrieval and JSON Schema contract.</td>
+<td></td>
+<td>0</td>
+<td>org.web.practice.ApiTestSuite@327514f</td></tr>
+<tr>
+<td title='org.web.practice.ApiTestSuite.testIdempotentPostScenario()'><b>testIdempotentPostScenario</b><br>Test class: org.web.practice.ApiTestSuite<br>Test method: Idempotent POST: Verifies that a request with the same Idempotency-Key is processed only once</td>
+<td></td>
+<td>0</td>
+<td>org.web.practice.ApiTestSuite@327514f</td></tr>
+<tr>
+<td title='org.web.practice.ApiTestSuite.testNegativeResponse()'><b>testNegativeResponse</b><br>Test class: org.web.practice.ApiTestSuite<br>Test method: Negative: Tests retrieval with an invalid account number.</td>
+<td></td>
+<td>1</td>
+<td>org.web.practice.ApiTestSuite@327514f</td></tr>
+<tr>
+<td title='org.web.practice.TrickyLocators.trickyLocatorL6()'><b>trickyLocatorL6</b><br>Test class: org.web.practice.TrickyLocators</td>
+<td></td>
+<td>2</td>
+<td>org.web.practice.TrickyLocators@7b98f307</td></tr>
+<tr>
+<td title='org.web.practice.RegistrationTests.testUserRegistration()'><b>testUserRegistration</b><br>Test class: org.web.practice.RegistrationTests<br>Parameters: {scenarioName=Admin Registration, firstName=Jane, lastName=Smith, password=AdminPass123!, address1=6789 Broadway Ln., country=India, state=Odisha, city=Khordha, zipcode=67676, mobileNumber=1098765432, role=ADMIN}</td>
+<td></td>
+<td>6</td>
+<td>org.web.practice.RegistrationTests@5b12b668</td></tr>
+<tr>
+<td title='org.web.practice.TrickyLocators.trickyLocatorL2()'><b>trickyLocatorL2</b><br>Test class: org.web.practice.TrickyLocators</td>
+<td></td>
+<td>7</td>
+<td>org.web.practice.TrickyLocators@7b98f307</td></tr>
+</table><p>
+</body>
+</html>
