@@ -108,7 +108,7 @@ Runs the Maven build, executes all the tests, and opens the testing results repo
 cd [project_folder_location]\MyMavenProject
 ```
 
-**3. Run the following command:
+**3. Run the following command:**
 
 ```
 mvn clean verify
