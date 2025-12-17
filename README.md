@@ -122,6 +122,7 @@ mvn clean verify
 
 ### Contact info
 Email: nfresh24@gmail.com
+LinkedIn: [Nicolaus Fresh](https://www.linkedin.com/in/nicolaus-fresh/)
 
 # Project Overview
 1. [Dynamic UI: Loading spinner implementing a FluentWait](#1-dynamic-ui-loading-spinner-implementing-a-fluentwait)
