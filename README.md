@@ -3,14 +3,18 @@
 ### Overview
 - Sandbox project to practice Selenium by exersicing automation testing concepts and use cases outline in the [Project Overview](#project-overview)
 - More notes of particular concepts are written inside the comments of the relevant file(s).
+- [Usage](#usage) section 
 
 ### Installation Prerequisites
+- **Download the project:** Use one of the methods below
+	- Clone repository using Git `git clone https://github.com/fresheeh/MyMavenProject.git` or GitHub Desktop
+    - Download and extract project [zip](https://github.com/fresheeh/MyMavenProject/archive/refs/heads/main.zip)
 - **Java Development Kit (JDK):** Version 17 or higher (Windows x64 Installer - https://download.oracle.com/java/17/archive/jdk-17.0.12_windows-x64_bin.exe).
 - **Google Chrome Web Browser:** https://www.google.com/chrome/index.html
 - **Microsoft Edge Web Browser:** https://www.microsoft.com/en-us/edge/download?form=MA13FJ
 - **Firefox Web Browser:** https://www.firefox.com/en-US/thanks/
 
-- **Maven Configuration Steps:** Ensure the `mvn` command is accessible from your system's command line. This requires setting the `MAVEN_HOME` environment variable and adding `%MAVEN_HOME%\bin` to your system's Path variable.
+- **Maven Configuration Steps:** Ensure the `mvn` command is accessible from your system's command line. This requires setting the `MAVEN_HOME` environment variable and adding `%MAVEN_HOME%\bin` to your system's `Path` variable.
 
 
 **1. Download and Extract Apache Maven**
