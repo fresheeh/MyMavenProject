@@ -66,7 +66,7 @@ public class SmokeVisualTest {
         String url = "https://demo.applitools.com/";
         driver.get(url);
         
-        // Synchronization Discipline: Use WaitUtils for stable element interaction
+        // Synchronization Discipline: Using Explicit Waits for stable element interaction
         wait.until(ExpectedConditions.visibilityOfElementLocated(usernameInput));
         wait.until(ExpectedConditions.visibilityOfElementLocated(passwordInput));
         wait.until(ExpectedConditions.elementToBeClickable(signinBtn));
