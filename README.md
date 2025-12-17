@@ -16,8 +16,7 @@ Sandbox project to practice Selenium automation testing.
 
 **1.1 Download:** Download the latest stable **Binary zip archive** (e.g., apache-maven-3.9.x-bin.zip) from the official Apache Maven website (https://maven.apache.org/download.cgi).
 
-**1.2 Extract:** Extract the contents of the zip file to a permanent location on your system.
-Recommended Location: `C:\Program Files\Apache\apache-maven-3.9.11` (or similar).
+**1.2 Extract:** Extract the contents of the zip file to a permanent location on your system. e.g., `C:\Program Files\Apache\apache-maven-3.9.11` (or similar).
 
 
 **2. Open the Environment Variables Window**
