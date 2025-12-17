@@ -5,6 +5,9 @@ Sandbox project to practice Selenium automation testing.
 
 ### Installation 
 - **Java Development Kit (JDK):** Version 17 or higher (Windows x64 Installer - https://download.oracle.com/java/17/archive/jdk-17.0.12_windows-x64_bin.exe).
+- **Google Chrome Web Browser:** https://www.google.com/chrome/index.html
+- **Microsoft Edge Web Browser:** https://www.microsoft.com/en-us/edge/download?form=MA13FJ
+- **Firefox Web Browser:** https://www.firefox.com/en-US/thanks/
 
 - **Configuration Steps:** Ensure the `mvn` command is accessible from your system's command line. This requires setting the `MAVEN_HOME` environment variable and adding %MAVEN_HOME%\bin to your system's Path variable.
 
@@ -51,11 +54,9 @@ This is the most critical step, as it tells the Command Prompt where to find the
 
 - **If the editor shows a list of paths:** Click **"New"** and enter the following path exactly:
 
-
 ```
 %MAVEN_HOME%\bin
 ```
-
 
 - *To ensure stability and bypass variable resolution issues, you can instead use the full explicit path (e.g., `C:\Program Files\Apache\apache-maven-3.9.11\bin`), which is often the most reliable method*.
 
@@ -84,7 +85,6 @@ This is the most critical step, as it tells the Command Prompt where to find the
 
 ```
 mvn -v
-
 ```
 
 **Expected Result:** If configured correctly, the output will display the Apache Maven version and your installed Java version, confirming the setup is complete.
@@ -106,14 +106,12 @@ Runs the Maven build, executes all the tests, and opens the testing results repo
 
 ```
 cd [project_folder_location]\MyMavenProject
-
 ```
 
 **3. Run the following command:
 
 ```
 mvn clean verify
-
 ```
 
 ### Contact info
