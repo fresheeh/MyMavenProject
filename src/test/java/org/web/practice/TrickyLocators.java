@@ -77,7 +77,6 @@ public class TrickyLocators {
 	 * Case: Input fields, containers, or elements where the ID is partially dynamic
 	 * (e.g., generated session IDs).
 	 */
-	final By L2_INPUT_BY_DYNAMIC_VALUE = By.cssSelector("input[value^='ECdITeCs:']");
 	final By L2_TABLE_ROW_BY_DYNAMIC_ID = By.cssSelector("tr[id^='product']");
 
 	@Test(enabled = true)
